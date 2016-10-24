@@ -15,7 +15,7 @@ WS = iread('P2WS.png', 'double'); % Load the picture of the WorkSheet into TS
 % Parameters to determine: Shape, Color, Size.
 
 threshold = 0.4;
-minBlobSize = 100;
+minBlobSize = 150;
 Shapes = determineTestSheetShapes(TS, threshold, minBlobSize);
 for x = 1:numel(Shapes)
     display(sprintf('Shape %d:', x));
